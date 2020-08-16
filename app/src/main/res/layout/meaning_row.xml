@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--뜻 맞추기(첫번째 메뉴)-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+            android:gravity="center"
+              android:descendantFocusability="blocksDescendants">
+    <TextView
+            android:id="@+id/meaning"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="6"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:text="테스트용"
+            android:fontFamily="@font/hoont"
+            android:textColor="#3d454a"
+            android:paddingLeft="25dp"/>
+    <TextView
+            android:id="@+id/w_count"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="10"
+            android:fontFamily="@font/hoont"
+            android:textColor="#d87959"/>
+    <CheckBox
+            android:id="@+id/fav"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.75"
+            android:gravity="center"
+            android:background="@drawable/checkbox"
+            android:button="@null" />
+    <Space
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"/>
+
+</LinearLayout>

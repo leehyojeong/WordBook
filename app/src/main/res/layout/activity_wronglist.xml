@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".wronglist"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="#96cedb">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="#d87959">
+        <Space android:layout_height="40dp"
+               android:layout_width="0dp"
+               android:layout_weight="0.5"/>
+        <Button
+                android:id="@+id/topmenu_wrong"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/menu_btn"/>
+        <Space android:layout_height="40dp"
+               android:layout_width="0dp"
+               android:layout_weight="2"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="오답리스트"
+                android:textSize="35dp"
+                android:fontFamily="@font/hoont"
+                android:textColor="#fffff9"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#3d454a"
+            android:text="더 이상 보지 않아도 되는 단어는 옆으로 밀어주세요 :)"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/hoont"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/wrong_cview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

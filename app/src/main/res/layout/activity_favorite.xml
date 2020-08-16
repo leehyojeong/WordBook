@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".favorite"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="#fffff9">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="#d87959">
+        <Space android:layout_height="40dp"
+               android:layout_width="0dp"
+               android:layout_weight="0.5"/>
+        <Button
+                android:id="@+id/topmenu_fav"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/menu_btn"/>
+        <Space android:layout_height="40dp"
+               android:layout_width="0dp"
+               android:layout_weight="2"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="선택 문제 풀기"
+                android:textSize="35dp"
+                android:fontFamily="@font/hoont"
+                android:textColor="#fffff9"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:textColor="#3d454a"
+                android:text="체크 후 출제방식을 선택해주세요"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/hoont"
+                android:paddingLeft="15dp"/>
+        <Button
+                android:id="@+id/del_btn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="뜻"
+                android:fontFamily="@font/hoont"
+                android:background="#f5d37c"
+                android:textSize="20sp"
+                android:textColor="#3d454a"/>
+        <Button
+                android:id="@+id/del_btn2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="단어"
+                android:fontFamily="@font/hoont"
+                android:background="#f5d37c"
+                android:textSize="20sp"
+                android:textColor="#3d454a"/>
+    </LinearLayout>
+    <ListView
+            android:id="@+id/favlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>
